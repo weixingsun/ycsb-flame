@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.1.1">
+<file name="/home/mobile/tools/ycsb/jdbc/src/main/java/com/yahoo/ycsb/db/JdbcDBCreateTable.java">
+</file>
+<file name="/home/mobile/tools/ycsb/jdbc/src/main/java/com/yahoo/ycsb/db/JdbcDBClient.java">
+</file>
+<file name="/home/mobile/tools/ycsb/jdbc/src/main/java/com/yahoo/ycsb/db/package-info.java">
+</file>
+<file name="/home/mobile/tools/ycsb/jdbc/src/main/java/com/yahoo/ycsb/db/JdbcDBCli.java">
+</file>
+</checkstyle>

@@ -1,0 +1,35 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:cassandra3-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+/home/mobile/tools/jdk/bin/java -cp /home/mobile/tools/ycsb/cassandra3/conf:/home/mobile/tools/ycsb/cassandra3/target/cassandra3-binding-0.7.0-SNAPSHOT.jar:/root/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar:/root/.m2/repository/com/datastax/cassandra/cassandra-driver-core/3.0.0/cassandra-driver-core-3.0.0.jar:/root/.m2/repository/io/netty/netty-handler/4.0.33.Final/netty-handler-4.0.33.Final.jar:/root/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/root/.m2/repository/io/netty/netty-transport/4.0.33.Final/netty-transport-4.0.33.Final.jar:/root/.m2/repository/io/netty/netty-codec/4.0.33.Final/netty-codec-4.0.33.Final.jar:/root/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar:/root/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/home/mobile/tools/ycsb/core/target/core-0.7.0-SNAPSHOT.jar:/root/.m2/repository/io/netty/netty-buffer/4.0.33.Final/netty-buffer-4.0.33.Final.jar:/root/.m2/repository/io/netty/netty-common/4.0.33.Final/netty-common-4.0.33.Final.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.CassandraCQLClient -P workloads/workloada -p hosts=127.0.0.1 -t
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraCQLClient -P workloads/workloada -p hosts=127.0.0.1 -t
+Loading workload...
+Starting test.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Connected to cluster: Test Cluster
+Datacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+[OVERALL], RunTime(ms), 639580.0
+[OVERALL], Throughput(ops/sec), 1563.5260639794865
+[READ], Operations, 499496.0
+[READ], AverageLatency(us), 652.2263741851787
+[READ], MinLatency(us), 354.0
+[READ], MaxLatency(us), 89855.0
+[READ], 95thPercentileLatency(us), 1086.0
+[READ], 99thPercentileLatency(us), 1809.0
+[READ], Return=OK, 499496
+[CLEANUP], Operations, 1.0
+[CLEANUP], AverageLatency(us), 2270208.0
+[CLEANUP], MinLatency(us), 2269184.0
+[CLEANUP], MaxLatency(us), 2271231.0
+[CLEANUP], 95thPercentileLatency(us), 2271231.0
+[CLEANUP], 99thPercentileLatency(us), 2271231.0
+[UPDATE], Operations, 500504.0
+[UPDATE], AverageLatency(us), 607.6011680226331
+[UPDATE], MinLatency(us), 340.0
+[UPDATE], MaxLatency(us), 244351.0
+[UPDATE], 95thPercentileLatency(us), 975.0
+[UPDATE], 99thPercentileLatency(us), 1527.0
+[UPDATE], Return=OK, 500504

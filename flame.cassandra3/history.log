@@ -1,0 +1,500 @@
+   25  ifconfig eth0 | grep 'inet addr:' | cut -d: -f2|awk '{print $1}'
+   26  ifconfig eth0 | grep inet | cut -d: -f2|awk '{print $1}'
+   27  ifconfig eth0 | grep inet 
+   28  more /etc/hosts | grep `hostname` | awk '{print $1}'
+   29  hostname
+   30  cd mobile_tools
+   31  cd ycsb/
+   32  ls
+   33  vi run.sh 
+   34  ifconfig docker0 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'
+   35  vi run.sh 
+   36  tail workloads/workloada
+   37  more workloads/workloada
+   38  vi ./run.sh 
+   39  ./run.sh 
+   40  vi ./run.sh 
+   41  ./run.sh 
+   42  mysql -h 172.17.0.1 -uroot -pws206771
+   43  cat run.sh 
+   44  db=ycsb
+   45  docker inspect --format '{{ .NetworkSettings.IPAddress }}' $db
+   46  mysql -h 172.17.0.1 -uroot -pws206771
+   47  docker ps
+   48  dmysql-server ycsb ws206771
+   49  docker stop 3ff0d6668ecb
+   50  dmysql-server ycsb ws206771
+   51  docker stop 3ff0d6668ecb
+   52  docker stop 3ff0d6668ecb
+   53  docker ps
+   54  docker ps
+   55  docker ps -a
+   56  docker ps -a | grep 'weeks ago' | awk '{print $1}'
+   57  docker ps -a | grep 'days' | awk '{print $1}'
+   58  docker ps -a | grep 'days' | awk '{print $1}'| xargs --no-run-if-empty docker rm
+   59  docker ps -a
+   60  docker ps -a | awk '{print $1}'| xargs --no-run-if-empty docker rm
+   61  docker ps -a
+   62  vi run.sh 
+   63  docker ps -a|grep -v CONTAINER
+   64  docker ps -aq
+   65  dmysql-server ycsb ws206771
+   66  docker ps -aq
+   67  vi run.sh 
+   68  vi run.sh 
+   69  ./run.sh 
+   70  ./run.sh 
+   71  ps aux --sort -rss
+   72  vi ./run.sh 
+   73  ./run.sh 
+   74  vi ./run.sh 
+   75  ./run.sh 
+   76  vi ./run.sh 
+   77  ./run.sh 
+   78  mysql -h 172.17.0.1 -uroot -pws206771
+   79  ./run.sh 
+   80  mysql -h 172.17.0.1 -uroot -pws206771
+   81  vi run.sh 
+   82  ./run.sh &
+   83  tp
+   84  top
+   85  vi run.sh 
+   86  vi run.sh 
+   87  ps aux --sort -rss
+   88  vmstat 
+   89  vi test.sh
+   90  cat ~/flame.spark/test.sh 
+   91  mkdir flame.mysql
+   92  cd flame.mysql/
+   93  vi test.sh
+   94  docker exec ycsb cat /etc/mysql/my.cnf
+   95  cat test.sh 
+   96  vi test.sh 
+   97  cp ~/flame.spark/start-perf.sh .
+   98  vi start-perf.sh 
+   99  ps -ef|grep mysql
+  100  ps aux --sort -rss |head
+  101  ps -ef|grep mysqld
+  102  ps -efq|grep mysqld
+  103  ps aux --sort -rss |grep mysqld
+  104  ps aux --sort -rss |head|grep mysqld
+  105  pgrep mysqld
+  106  vi start-perf.sh 
+  107  cat test.sh 
+  108  cp ~/flame.spark/start-flame-gen.sh .
+  109  cat start-flame-gen.sh 
+  110  vi start-flame-gen.sh
+  111  which flamegraph.pl
+  112  vi /home/mobile/tools/flamegraph/flamegraph.pl 
+  113  vi start-flame-gen.sh
+  114  cat ~/flame.spark/./copy_flame.sh
+  115  cp ~/flame.spark/./copy_flame.sh .
+  116  vi copy_flame.sh 
+  117  top
+  118  ps aux --sort -rss|head
+  119  docker images
+  120  docker ps
+  121  free
+  122  vi test.sh 
+  123  ./test.sh
+  124  ll
+  125  chmod 777 test.sh 
+  126  ./test.sh 
+  127  top
+  128  ls
+  129  cat test.sh 
+  130  cat ../run.log
+  131  vmstat
+  132  vi mysql.sh
+  133  cat ../run.sh 
+  134  vi mysql.sh 
+  135  chmod 777 mysql.sh 
+  136  ./mysql.sh 
+  137  vi test.sh 
+  138  cp ../run.sh .
+  139  vi run.sh 
+  140  vi ../workloads/workloada 
+  141  top
+  142  ps aux --sort -rss
+  143  ps aux --sort -rss|head
+  144  cat test.sh 
+  145  vi test.sh 
+  146  vi run.sh 
+  147  vi test.sh 
+  148  ./test.sh 
+  149  top
+  150  cd mobile_tools
+  151  cd ycsb/
+  152  ls
+  153  top
+  154  cd flame.mysql/
+  155  tail run.log 
+  156  vmstat
+  157  free
+  158  vi test.sh 
+  159  ./test.sh 
+  160  perf report
+  161  vmstat
+  162  free
+  163  ps aux --sort -rss
+  164  top
+  165  ps -ef|grep java
+  166  more run.log 
+  167  rm run.log 
+  168  vi ../run.log 
+  169  ll
+  170  vi /home/mobile/tools/flamegraph/stackcollapse-perf.pl
+  171  cat test.sh 
+  172  cat ./start-flame-gen.sh
+  173  perf script
+  174  perf report 
+  175  perf script > perf.script
+  176  vi perf.script 
+  177  docker stop ycsb
+  178  cat test.sh 
+  179  cat run.sh 
+  180  docker ps -aq|awk '{print $1}'|xargs --no-run-if-empty docker rm
+  181  cat ~/docker-vpn.sh 
+  182  ~/docker-vpn.sh
+  183  cd 
+  184  cat docker-vpn.sh 
+  185  docker run --name=vpn --net=host --privileged=true -d -it philplckthun/strongswan /bin/bash -c 'export VPN_PASSWORD=ws206771 && export VPN_PSK=ws206771 && export VPN_USER=u1 && /run.sh '
+  186  docker stop vpn
+  187  docker rm vpn
+  188  docker rm vpn
+  189  docker run --name=vpn --net=host --privileged=true -d -it philplckthun/strongswan /bin/bash -c 'export VPN_PASSWORD=ws206771 && export VPN_PSK=ws206771 && export VPN_USER=u1 && /run.sh '
+  190  vi docker-vpn.sh 
+  191  docker ps
+  192  ps aux --sort -rss
+  193  apt-get install systemtapapt-get install systemtap
+  194  apt-get install systemtap
+  195  apt-get install linux-headers-$(uname -r)
+  196  stap -e 'probe kernel.function("sys_open") {log("hello world") exit()}'
+  197  uname -a
+  198  apt-get install debuginfo 
+  199  cd tools
+  200  ls
+  201  wget http://ddebs.ubuntu.com/pool/main/l/linux/linux-image-4.2.0-25-generic-dbgsym_4.2.0-25.30_amd64.ddeb
+  202  wget linux-image-4.2.0-25-lowlatency-dbgsym_4.2.0-25.30_amd64.ddeb
+  203  wget http://ddebs.ubuntu.com/pool/main/l/linux/linux-image-4.2.0-25-lowlatency-dbgsym_4.2.0-25.30_amd64.ddeb
+  204  ls
+  205  dpkg -i linux-image-4.2.0-25-lowlatency-dbgsym_4.2.0-25.30_amd64.ddeb
+  206  stap -e 'probe kernel.function("sys_open") {log("hello world") exit()}'
+  207  dpkg -l
+  208  dpkg -l |grep dbg
+  209  dpkg -P linux-image-4.2.0-25-lowlatency-dbgsym
+  210  ls
+  211  rm linux-image-4.2.0-25-lowlatency-dbgsym_4.2.0-25.30_amd64.ddeb
+  212  ls
+  213  dpkg -i linux-image-4.2.0-25-generic-dbgsym_4.2.0-25.30_amd64.ddeb 
+  214  stap -e 'probe kernel.function("sys_open") {log("hello world") exit()}'
+  215  wget http://ddebs.ubuntu.com/pool/main/l/linux/linux-image-4.2.0-25-lowlatency-dbgsym_4.2.0-25.30_amd64.ddeb
+  216  cd mobile_tools
+  217  ls
+  218  wget http://www.apache.org/dyn/closer.lua/cassandra/3.2.1/apache-cassandra-3.2.1-bin.tar.gz
+  219  ls
+  220  rm apache-cassandra-3.2.1-bin.tar.gz 
+  221  wget http://www.us.apache.org/dist/cassandra/3.2.1/apache-cassandra-3.2.1-bin.tar.gz
+  222  ll apache-cassandra-3.2.1-bin.tar.gz 
+  223  df
+  224  cd mobile_tools
+  225  cd ycsb/
+  226  ls
+  227  cd flame.mysql/
+  228  ls
+  229  vi perf.script 
+  230  ifconfig
+  231  cd tools
+  232  ls
+  233  cat .bash_profile
+  234  cat ~/.bash_profile
+  235  scp nzmesse1@nzmessengers.co.nz:/home2/nzmesse1/tools/mysql-bin.tar.gz .
+  236  df
+  237  scp nzmesse1@nzmessengers.co.nz:/home2/nzmesse1/tools/mysql-5.7.10-src.tar.gz .
+  238  ls
+  239  docker ps
+  240  ps aux --sort -rss
+  241  ps aux --sort -rss|head
+  242  tar zxf mysql-bin.tar.gz 
+  243  cd mysql-bin/
+  244  ls
+  245  bin/mysql --version
+  246  ls
+  247  ls /etc/mysql/my.cnf
+  248  vi /etc/mysql/my.cnf
+  249  vi /etc/mysql/conf.d/mysql.cnf 
+  250  ls
+  251  mkdir etc
+  252  ls
+  253  mkdir data
+  254  ls
+  255  groupadd mysql
+  256  useradd -g mysql -m mysql
+  257  ls /home
+  258  cd tools/mysql-bin/
+  259  ls
+  260  cp support-files/my-default.cnf etc/my.cnf
+  261  vi etc/my.cnf 
+  262  cd ..
+  263  mv mysql-bin /home/mysql/mysql-5.7.10
+  264  passwd mysql
+  265  chown -R mysql.mysql /home/mysql/mysql-5.7.10/
+  266  su mysql
+  267  ls
+  268  tar zxf mysql-5.7.10-src.tar.gz 
+  269  ls
+  270  cd mysql-5.7.10/
+  271  ls
+  272  vi config.sh 
+  273  nohup ./config.sh > config.log 2>&1 &
+  274  tail config.log 
+  275  rm CMakeCache.txt 
+  276  nohup ./config.sh > config.log 2>&1 &
+  277  tail config.log 
+  278  tail config.log 
+  279  vi config.sh 
+  280  mv /home/mysql/mysql-5.7.10/ /home/mysql/mysql-5.7.10-justhost
+  281  vi config.log 
+  282  apt-get install libncurses5-dev
+  283  nohup ./config.sh > config.log 2>&1 &
+  284  tail config.log -f
+  285  vi config.log 
+  286  vi config.sh 
+  287  nohup ./config.sh > config.log 2>&1 &
+  288  vi config.log 
+  289  tail -f config.log 
+  290  tail -f config.log 
+  291  ps
+  292  top
+  293  tail -f config.log 
+  294  ./config.sh 
+  295  cat make.sh
+  296  vi make.sh
+  297  ./make.sh 
+  298  ps
+  299  ps
+  300  tail make.out 
+  301  cd tools/mysql-5.7.10/
+  302  tail make.out 
+  303  vi make.out 
+  304  exit
+  305  cd tools/mysql-5.7.10/
+  306  ls
+  307  vi make.out 
+  308  vi sql/CMakeFiles/sql.dir/build.make 
+  309  vi make.out 
+  310  vi sql/CMakeFiles/sql.dir/build.make 
+  311  ./make.sh 
+  312  ps
+  313  tail make.out 
+  314  tail make.out -f
+  315  tail make.out 
+  316  ps
+  317  tail make.out 
+  318  cd tools
+  319  ls
+  320  cp mysql-bin.tar.gz /home/mysql/
+  321  cd /home/mysql/
+  322  ls
+  323  tar zxf mysql-bin.tar.gz 
+  324  ll
+  325  cd mysql-bin/
+  326  ls
+  327  bin/mysqld
+  328  su - mysql
+  329  chown -R mysql.mysql /home/mysql/mysql-bin
+  330  su - mysql
+  331  cd /home/mobile/tools/
+  332  cd ycsb/
+  333  vi mysql.cfg
+  334  chown mobile.mobile mysql.cfg 
+  335  cat mysql.jdbc
+  336  cat mysql.cfg
+  337  ps -ef|grep mysql
+  338  mysql 
+  339  vi /etc/mysql/my.cnf
+  340  vi ~/.my.cnf
+  341  ls ~/.my.cnf
+  342  vi ~/.my.cnf
+  343  vi /home/mysql/mysql-bin/support-files/my-default.cnf 
+  344  vi ~/.my.cnf
+  345  vi ~/.my.cnf
+  346  ls /tmp/mysql.sock
+  347  ls /tmp/mysql.sock1
+  348  vi ~/.my.cnf
+  349  mysql
+  350  mysql -uroot
+  351  ls -a
+  352  ls /home/mysql/
+  353  ls /home/mysql/ -a
+  354  ls /home/mysql/.mysql_secret 
+  355  cat /home/mysql/.mysql_secret
+  356  mysql -uroot -pleo*DS*C7M=J
+  357  ls [mysqld]
+  358  port                           = 3306
+  359  socket                         = /var/lib/mysql/mysql.sock
+  360  # General #
+  361  default-storage-engine         = InnoDB
+  362  # Database replication #
+  363  server-id=1895149
+  364  vi ~/.my.cnf 
+  365  su - mysql 
+  366  cat .my.cnf
+  367  cp .my.cnf /home/mysql/
+  368  chmod -R mysql.mysql /home/mysql
+  369  chown -R mysql.mysql /home/mysql
+  370  su - mysql
+  371  cd tools/
+  372  ls
+  373  su - mobile
+  374  cat ~/.my.cnf 
+  375  vi ~/.my.cnf 
+  376  cp ~/.my.cnf /home/mobile/.my.cnf
+  377  su - mobile
+  378  chown mysql.mysql /home/mobile/.my.cnf
+  379  chown mobile.mobile /home/mobile/.my.cnf
+  380  su - mobile
+  381  su - mobile
+  382  su - mobile
+  383  cat ~/.bash_profile 
+  384  vi /home/mobile/.bash_profile 
+  385  su - mobile
+  386  top
+  387  top
+  388  su - mysql
+  389  su - mobile
+  390  pwd
+  391  cd /home/mobile/
+  392  cd tools/
+  393  ll
+  394  chown -R mobile.mobile .
+  395  ls ycsb/jars/mysql-connector-java-5.1.38-bin.jar 
+  396  cd ycsb/
+  397  ls
+  398  tail run.sh 
+  399  bin/ycsb load jdbc -P workloads/workloada -cp jars/mysql-connector-java-5.1.38-bin.jar -P mysql.cfg
+  400  vmstat
+  401  ps aux --sort -rss
+  402  cd 
+  403  cd -
+  404  ls
+  405  cd flame.mysql/
+  406  ls
+  407  cat test.sh 
+  408  ./test.sh 
+  409  ll flame.mysql.svg
+  410  perf top
+  411  top
+  412  cd ..
+  413  tail run.sh 
+  414  cd -
+  415  tail run.sh 
+  416  ls
+  417  tail test.sh 
+  418  vi ../run.log 
+  419  vi ../workloads/workloada 
+  420  vi ../run.log 
+  421  ./test.sh 
+  422  top
+  423  cat test.sh 
+  424  top
+  425  vmstat 
+  426  vi ../run.log 
+  427  vmstat
+  428  ps aux --sort -rss
+  429  vi ../workloads/workloada 
+  430  vi test.sh 
+  431  vi test.sh 
+  432  ./test.sh 
+  433  top
+  434  tail test.sh 
+  435  ./start-perf.sh
+  436  ls
+  437  cat ./start-perf.sh
+  438  pgrep mysqld
+  439  ps -ef|grep mysqld
+  440  top
+  441  ps -ef|grep mysqld
+  442  pgrep mysqld
+  443  pgrep mysqld_safe
+  444  man pgrep
+  445  pgrep -x mysqld
+  446  vi start-perf.sh 
+  447  top
+  448  vmstat 
+  449  ./start-perf.sh 
+  450  cat test.sh 
+  451  ./start-flame-gen.sh
+  452  ls
+  453  cat start-flame-gen.sh
+  454  perf script > perf.script
+  455  mv perf.script  perf.script.mysql
+  456  vi perf.script.mysql 
+  457  cat start-flame-gen.sh 
+  458  cat perf.script.mysql | stackcollapse-perf.pl  
+  459  cd 
+  460  cd flame.spark/
+  461  ls
+  462  perf script > perf.script
+  463  ls /tmp/perf-10209.map
+  464  ll perf.script
+  465  vi perf.script 
+  466  cd 
+  467  cd /home/mobile/tools/ycsb/flame.mysql
+  468  ll stackcollapse-perf.pl
+  469  which stackcollapse-perf.pl
+  470  ll /home/mobile/tools/flamegraph/stackcollapse-perf.pl
+  471  vi /home/mobile/tools/flamegraph/stackcollapse-perf.pl 
+  472  cd flame.spark/
+  473  perf report
+  474  cd ../flame.mysql/
+  475  ls
+  476  cp /home/mobile/tools/ycsb/flame.mysql/* .
+  477  perf report
+  478  perf script > perf.script.mysql.2
+  479  cd ../flame.spark/
+  480  perf script > perf.script.spark
+  481  vi perf.script.spark 
+  482  ls
+  483  ls /tmp*.map
+  484  ls /tmp/*.map
+  485  vi perf.script.spark 
+  486  ls /tmp
+  487  ls /home/mobile
+  488  ls
+  489  ps aux --sort -rss |head
+  490  /home/mysql/mysql-bin/bin/mysqladmin shutdown
+  491  /home/mysql/mysql-bin/bin/mysqladmin shutdown --socket=/tmp/mysql.sock1
+  492  /home/mysql/mysql-bin/bin/mysqladmin shutdown --socket=/tmp/mysql.sock1 -uroot -pws206771
+  493  ls
+  494  cat test.sh 
+  495  ./test.sh 
+  496  cp /tmp/perf-19314.map .
+  497  perf top
+  498  perf report
+  499  perf script > perf.script.spark 
+  500  vi perf.script.spark 
+  501  cd flame.spark/
+  502  ls
+  503  vi perf.script.spark 
+  504  cat test.sh 
+  505  cat ./start-flame-gen.sh
+  506  stackcollapse-perf.pl perf.script.spark > out.perf.fold
+  507  vi out.perf.fold
+  508  vi out.perf.fold
+  509  vi perf.script.spark 
+  510  grep jni_GetPrimitiveArrayCritical out.perf.fold 
+  511  grep jni_GetPrimitiveArrayCritical out.perf.fold |wc -l
+  512  vi perf.script.spark 
+  513  man perf script
+  514  vi ../flame.mysql/perf.script.mysql
+  515  top
+  516  ps -ef|grep java
+  517  cd 
+  518  mv flame.mysql/ flame.mysql.1
+  519  cd /home/mobile/tools/ycsb/
+  520  ls
+  521  cd flame.mysql/
+  522  ls
+  523  vi test.sh 
+  524  history > history.log
